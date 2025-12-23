@@ -1,1 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Multi-Language Web Compiler</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/pyodide/v0.23.4/full/pyodide.js"></script>
+</head>
+
+<body>
+    <h1>Multi-Language Web Compiler</h1>
+
+    <select id="language">
+        <option value="python">Python (WASM)</option>
+        <option value="javascript">JavaScript</option>
+        <option value="c">C</option>
+        <option value="cpp">C++</option>
+        <option value="java">Java</option>
+    </select>
+
+    <textarea id="code" placeholder="Write your code here..."></textarea>
+
+    <button onclick="runCode()">Run Code</button>
+
+    <h3>Output:</h3>
+    <pre id="output"></pre>
+
+    <h3>Explanation:</h3>
+    <pre id="explanation"></pre>
+
+    <h3>Error:</h3>
+    <pre id="error"></pre>
+    
+    <script src="https://cdn.jsdelivr.net/pyodide/v0.23.4/full/pyodide.js"></script>
+<script src="script.js"></script>
+
+
+
+</body>
+</html>
 
